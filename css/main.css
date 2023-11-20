@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  
+}
+
+img{
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-auto-flow: dense;
+  margin: 60px auto;
+}
+
+.grid-container :nth-child(4n){
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-container :nth-child(6n){
+  grid-row: span 3;
+  grid-column: span 3;
+}
